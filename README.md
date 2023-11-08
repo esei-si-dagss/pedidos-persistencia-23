@@ -12,11 +12,21 @@
 * (opcional) GIT
 * (opcional) IDE Java (Eclipse, Netbeans, IntelliJ, VS Code)
 
-### Crear BD para los ejemplos
+**Nota:** En los equipos de laboratorio, es conveniente establecer la variable de entorno JAVA_PATH, para que el comando `mvn` (Maven) compile y ejecute los proyectos siempre con el mismo JDK.
+
+ ```sh
+ export JAVA_HOME=/usr/lib/jvm/openjdk-20
+ 
+ export PATH=$JAVA_HOME/bin:$PATH
+ ```
+
+ 
+
+Crear BD para los ejemplos
 
 * Crear BD "pruebas_si" en MySQL
 
-```
+```sh
 mysql -u root -p    [pedirá la contraseña de MySQL]
 
 mysql> create database pruebas_si;
@@ -65,7 +75,7 @@ rm src/test/java/es/uvigo/mei/pedidos/AppTest.java
 
 ## 3. CONFIGURACIÓN PARA JPA
 ### Declarar las dependencias necesarias en `pom.xml`
-1 Declarar el uso de Hibernate como _provider_ JPA (ver. 5.6.14.Final) dentro de `<dependencies>...</dependencies>`
+1 Declarar el uso de Hibernate como _provider_ JPA (ver. 6.3.1.Final) dentro de `<dependencies>...</dependencies>`
 
 ```xml
 <project>
@@ -82,7 +92,7 @@ rm src/test/java/es/uvigo/mei/pedidos/AppTest.java
 ```
 El resto de dependencias necesarias para `hibernate-core` serán descargadas e instaladas por Maven.
 
-2 Declarar el _connector_ JDBC para MySQL (ver. 8.0.33) dentro de `<dependencies>...</dependencies>`
+2 Declarar el _connector_ JDBC para MySQL (ver. 8.2.0) dentro de `<dependencies>...</dependencies>`
 
 ```xml
 <project>
@@ -90,9 +100,9 @@ El resto de dependencias necesarias para `hibernate-core` serán descargadas e i
    <dependencies>
       ...
       <dependency>
-         <groupId>com.mysql</groupId>
-         <artifactId>mysql-connector-j</artifactId>
-         <version>8.0.33</version>
+        <groupId>com.mysql</groupId>
+        <artifactId>mysql-connector-j</artifactId>
+        <version>8.2.0</version>
       </dependency>
    </dependencies>
 </project>
@@ -103,7 +113,7 @@ El resto de dependencias necesarias para `hibernate-core` serán descargadas e i
 
 ## 5. AÑADIR ENTIDADES
 
-Crear el directorio para el paquete `entidades` y copiar los ficheros Java con la definición de las entidades (disponibles en [https://github.com/esei-si-dagss/pedidos-persistencia-22/tree/main/src/main/java/es/uvigo/mei/pedidos/entidades](https://github.com/esei-si-dagss/pedidos-persistencia-22/tree/main/src/main/java/es/uvigo/mei/pedidos/entidades))
+Crear el directorio para el paquete `entidades` y copiar los ficheros Java con la definición de las entidades (disponibles en [https://github.com/esei-si-dagss/pedidos-persistencia-23/tree/main/src/main/java/es/uvigo/mei/pedidos/entidades](https://github.com/esei-si-dagss/pedidos-persistencia-23/tree/main/src/main/java/es/uvigo/mei/pedidos/entidades))
 
 ```sh
 mkdir -p src/main/java/es/uvigo/mei/pedidos/entidades
