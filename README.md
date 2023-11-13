@@ -15,14 +15,14 @@
 **Nota:** En los equipos de laboratorio, es conveniente establecer la variable de entorno JAVA_PATH, para que el comando `mvn` (Maven) compile y ejecute los proyectos siempre con el mismo JDK.
 
  ```sh
- export JAVA_HOME=/usr/lib/jvm/openjdk-20
+ export JAVA_HOME=/usr/lib/jvm/jdk-20
  
  export PATH=$JAVA_HOME/bin:$PATH
  ```
 
  
 
-Crear BD para los ejemplos
+### Crear BD para los ejemplos
 
 * Crear BD "pruebas_si" en MySQL
 
