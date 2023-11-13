@@ -12,7 +12,8 @@
 * (opcional) GIT
 * (opcional) IDE Java (Eclipse, Netbeans, IntelliJ, VS Code)
 
-**Nota:** En los equipos de laboratorio, es conveniente establecer la variable de entorno JAVA_PATH, para que el comando `mvn` (Maven) compile y ejecute los proyectos siempre con el mismo JDK.
+
+**Nota:** En los equipos de laboratorio es conveniente establecer la variable de entorno JAVA_PATH, para que el comando `mvn` (Maven) compile y ejecute los proyectos siempre con el mismo JDK.
 
  ```sh
  export JAVA_HOME=/usr/lib/jvm/jdk-20

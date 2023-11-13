@@ -5,14 +5,13 @@ Ejemplo de DAO (_Data Access Object_) genérico para JPA
 Ejemplo de uso de JUnit5 para _testing_ simple del DAO JPA
 
 
-**Nota:** En los equipos de laboratorio, es conveniente establecer la variable de entorno JAVA_PATH, para que el comando `mvn` (Maven) compile y ejecute los proyectos siempre con el mismo JDK.
+**Nota:** En los equipos de laboratorio es conveniente establecer la variable de entorno JAVA_PATH, para que el comando `mvn` (Maven) compile y ejecute los proyectos siempre con el mismo JDK.
 
  ```sh
  export JAVA_HOME=/usr/lib/jvm/jdk-20
     
  export PATH=$JAVA_HOME/bin:$PATH
  ```
-
 
 
 ## DAO JPA Genérico
