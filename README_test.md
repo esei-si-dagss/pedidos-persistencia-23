@@ -42,13 +42,10 @@ pushd
 ```
 ...
         <dependency>
-        
-          <dependency>
-             <groupId>org.junit.jupiter</groupId>
-             <artifactId>junit-jupiter</artifactId>
-             <version>5.10.0</version>
-             <scope>test</scope>
-          </dependency>
+           <groupId>org.junit.jupiter</groupId>
+           <artifactId>junit-jupiter</artifactId>
+           <version>5.10.0</version>
+           <scope>test</scope>
         </dependency>
 ...
 ```
@@ -125,7 +122,6 @@ Contenido
       <property name="hibernate.format_sql" value="true"/>
     </properties>
   </persistence-unit>
-
 </persistence>
 ```
 
